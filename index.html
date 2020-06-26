@@ -6,16 +6,43 @@
   <title>prompt, alert, calculate</title>
 
   <!-- load the styles -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
 
-  <!-- load the shared data -->
-
+  <!-- load the shared data  -->
+  <script src="./scripts/shared-variables.js"></script>
   <!-- load the handler scripts -->
-
-
+  <script src="./scripts/handlers/add.js"></script>
+  <script src="./scripts/handlers/divide.js"></script>
+  <script src="./scripts/handlers/instructions.js"></script>
+  <script src="./scripts/handlers/last-result-display.js"></script>
+  <script src="./scripts/handlers/last-result-reset.js"></script>
+  <script src="./scripts/handlers/multiply.js"></script>
+  <script src="./scripts/handlers/subtract.js"></script>
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./review-buttons/init.js'></script>
 
 </head>
+<div class="button">
+  <div  class='btn'>
+    <button onclick='addHandler()'> add  </button>
+  </div>
+  <div  class='btn'>
+    <button onclick='divideHandler()'> divide </button>
+  </div>
+  <div  class='btn'>
+    <button onclick='multiplyHandler()'> multiply </button>
+  </div>
+  <div  class='btn'>
+    <button onclick='subtractHandler()'> subtract</button>
+  </div>
+  <div  class='btn'>
+    <button onclick='resetLastResultHandler()()'>last result reset</button>
+  </div>
+  <div class='btn'>
+    <button onclick='displayLastResultHandler()'> last result display</button>
+  </div>
+</div>
+
 
 <body></body>
 
