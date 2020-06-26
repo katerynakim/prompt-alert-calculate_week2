@@ -94,29 +94,19 @@ __full user story description__
 
   
 
-- [] developed on a branch called `top`
+- [X] developed on a branch called `top`
   
 
-### HTML
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
 
 
-### CSS
-- [] 
-- [] 
-- [] 
-- [] 
+ - [X] created buttons in HTML
 
-### JS
+ - [X] links to css and js files
 
-- [] 
-- [] 
-- [] 
-- [] 
+  - [X] styled buttons css
+
+  - [X] write the formula in Java.sc folder
+  - [X] write readme file
 
 
   
