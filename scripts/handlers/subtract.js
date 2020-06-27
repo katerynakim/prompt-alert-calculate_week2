@@ -12,7 +12,7 @@ function subtract(x, y) {
   if (typeof x !== 'number') { throw new TypeError('x'); }
   if (typeof y !== 'number') { throw new TypeError('y'); }
 
-  const result = _;
+  const result = x-y;
 
   if (typeof result !== 'number') { throw new TypeError('result'); }
   return result;
@@ -79,13 +79,17 @@ function subtract(x, y) {
 function subtractHandler() {
   debugger;
   console.log('-- action: subtract');
-  console.log('lastResult (before):', typeof lastResult, '\n', lastResult);
-
+  
   // read a number from the user
+  const input1 = prompt('please give the first number');
+  const x = Number(input1);
+  const input2 = prompt (`Please give second number` );
+  const y = Number(input2);
+  // add the user's number to the last result and reassign lastResult
+  
+  const result = subtract(x,y);
 
-
-  // subtract the last result by the user's number and reassign lastResult
-  _;
+  lastResult = result;
   console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
 
   alert(`the new result is: ${lastResult}`);
